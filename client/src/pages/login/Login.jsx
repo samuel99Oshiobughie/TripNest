@@ -1,4 +1,5 @@
 import axios from "axios";
+import TopBar from "../../components/topBar/TopBar";
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
@@ -32,7 +33,9 @@ const Login = () => {
 
 
   return (
-    <div className="login">
+    <div>
+      <TopBar />
+      <div className="login">
       <div className="lContainer">
         <input
           type="text"
@@ -54,6 +57,8 @@ const Login = () => {
         {error && <span>{error.message}</span>}
       </div>
     </div>
+    </div>
+    
   );
 };
 

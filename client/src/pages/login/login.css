@@ -6,6 +6,7 @@
 }
 
 .lContainer {
+  width: 30%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -13,13 +14,17 @@
 
 .lInput{
   height: 30px;
+  margin-top: 5px;
+  border: 2px solid #209533;
+  border-radius: 20px;
   padding: 10px;
 }
 
 .lButton {
   border: none;
   padding: 10px 20px;
-  background-color: #0071c2;
+  /* background-color: #0071c2; */
+  background-color: #209533;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -27,6 +32,6 @@
 }
 
 .lButton:disabled{
-  background-color: #0071c28c;
+  background-color: #72c17f;;
   cursor: not-allowed;
 }

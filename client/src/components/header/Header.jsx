@@ -16,6 +16,7 @@ import { format } from "date-fns";
 import { useNavigate } from "react-router-dom";
 import { SearchContext } from "../../context/SearchContext";
 import { AuthContext } from "../../context/AuthContext";
+import backgroundVideo from '../../assets/paris.mp4';
 
 const Header = ({ type }) => {
   const [destination, setDestination] = useState("");
@@ -49,6 +50,7 @@ const Header = ({ type }) => {
 
   const { dispatch } = useContext(SearchContext);
 
+  
   const handleSearch = () => {
     dispatch({ type: "NEW_SEARCH", payload: { destination, dates, options } });
     navigate("/hotels", { state: { destination, dates, options } });
@@ -61,7 +63,7 @@ const Header = ({ type }) => {
           type === "list" ? "headerContainer listMode" : "headerContainer"
         }
       >
-        <div className="headerList">
+        {/* <div className="headerList">
           <div className="headerListItem active">
             <FontAwesomeIcon icon={faBed} />
             <span>Stays</span>
@@ -82,17 +84,18 @@ const Header = ({ type }) => {
             <FontAwesomeIcon icon={faTaxi} />
             <span>Airport taxis</span>
           </div>
-        </div>
+        </div> */}
         {type !== "list" && (
           <>
-            <h1 className="headerTitle">
+            {/* <h1 className="headerTitle">
               A lifetime of discounts? It's Genius.
             </h1>
             <p className="headerDesc">
               Get rewarded for your travels – unlock instant savings of 10% or
               more with a free Lamabooking account
             </p>
-            {!user && <button className="headerBtn">Sign in / Register</button>}
+            {!user && <button className="headerBtn">Sign in / Register</button>} */}
+             <video className="background-video" src={backgroundVideo} autoPlay muted loop />
             <div className="headerSearch">
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faBed} className="headerIcon" />
@@ -100,7 +103,7 @@ const Header = ({ type }) => {
                   type="text"
                   placeholder="Where are you going?"
                   className="headerSearchInput"
-                  onChange={(e) => setDestination(e.target.value)}
+                  onChange={(e) => setDestination(e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1).toLowerCase())}
                 />
               </div>
               <div className="headerSearchItem">

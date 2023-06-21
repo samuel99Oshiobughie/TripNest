@@ -16,7 +16,6 @@ const List = () => {
   const [options, setOptions] = useState(location.state.options);
   const [min, setMin] = useState(undefined);
   const [max, setMax] = useState(undefined);
-
   const { data, loading, error, reFetch } = useFetch(
     `/hotels?city=${destination}&min=${min || 0 }&max=${max || 999}`
   );
@@ -24,6 +23,8 @@ const List = () => {
   const handleClick = () => {
     reFetch();
   };
+
+
 
   return (
     <div>
@@ -35,7 +36,11 @@ const List = () => {
             <h1 className="lsTitle">Search</h1>
             <div className="lsItem">
               <label>Destination</label>
-              <input placeholder={destination} type="text" />
+              <input 
+              placeholder={destination} 
+              type="text" 
+              onChange={(e) => setDestination(e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1).toLowerCase())}
+              />
             </div>
             <div className="lsItem">
               <label>Check-in Date</label>
@@ -81,6 +86,7 @@ const List = () => {
                     min={1}
                     className="lsOptionInput"
                     placeholder={options.adult}
+                    onChange={(e) => setOptions(e.target.value)}
                   />
                 </div>
                 <div className="lsOptionItem">
@@ -90,6 +96,7 @@ const List = () => {
                     min={0}
                     className="lsOptionInput"
                     placeholder={options.children}
+                    onChange={(e) => setOptions(e.target.value)}
                   />
                 </div>
                 <div className="lsOptionItem">
@@ -99,6 +106,7 @@ const List = () => {
                     min={1}
                     className="lsOptionInput"
                     placeholder={options.room}
+                    onChange={(e) => setOptions(e.target.value)}
                   />
                 </div>
               </div>

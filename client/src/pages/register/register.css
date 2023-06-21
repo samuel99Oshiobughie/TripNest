@@ -1,0 +1,38 @@
+.register {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.regForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 30%;
+}
+
+.rInput {
+  height: 30px;
+  margin-top: 5px;
+  border: 2px solid #209533;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.rButton {
+  border: none;
+  padding: 10px 20px;
+  /* background-color: #0071c2; */
+  background-color: #209533;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.rButton:disabled{
+    background-color: #0071c28c;
+    cursor: not-allowed;
+  }

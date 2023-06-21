@@ -1,6 +1,8 @@
 .navbar{
+  /* width: 1290px; */
+  overflow-x: hidden;
   height: 50px;
-  background-color: #003580;
+  background-color: #209533;
   display: flex;
   justify-content: center;
 }
@@ -16,12 +18,21 @@
 
 .logo{
   font-weight: 500;
+  font-size: 25px;
 }
 
 .navButton{
   margin-left: 20px;
-  border: none;
+  /* border: none; */
+  border-radius: 5px;
   padding: 5px 10px;
   cursor: pointer;
-  color: #003580;
+  /* background-color: rgb(165, 165, 211); */
+  /* color: #209533; */
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    padding: 0 15px;
+  }
 }

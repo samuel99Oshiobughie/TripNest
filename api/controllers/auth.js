@@ -16,6 +16,7 @@ export const register = async (req, res, next) => {
     await newUser.save();
     res.status(200).send("User has been created.");
   } catch (err) {
+    console.log("err: ", err)
     next(err);
   }
 };
@@ -47,3 +48,8 @@ export const login = async (req, res, next) => {
     next(err);
   }
 };
+
+export const logout = async (req, res) => {
+  res.clearCookie('access_token');
+  res.json({ message: 'Logout successful' });
+}

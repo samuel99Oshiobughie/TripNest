@@ -1,3 +1,8 @@
+.home {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .homeContainer{
   margin-top: 50px;
   display: flex;

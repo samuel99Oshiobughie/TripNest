@@ -27,3 +27,9 @@
   bottom: 20px;
   left: 20px;
 }
+
+@media screen and (max-width: 767px) {
+  .featured {
+    margin-top: 200px;
+  }
+}

@@ -29,6 +29,8 @@ const Hotel = () => {
   const navigate = useNavigate();
 
   const { dates, options } = useContext(SearchContext);
+  console.log("dates: ", dates)
+  console.log("options: ", options)
 
   const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
   function dayDifference(date1, date2) {
