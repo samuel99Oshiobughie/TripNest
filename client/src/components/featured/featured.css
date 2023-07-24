@@ -1,19 +1,23 @@
 .featured{
   width: 100%;
-  max-width: 1024px;
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  z-index: 1;
+  padding: 0px 10px;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 50px;
+  /* z-index: 1; */
 }
 
 .featuredItem{
+  width: 310px;
+  height: 250px;
+  display: flex;
+  flex: 0 0 auto;
   position: relative;
   color: white;
   border-radius: 10px;
   overflow: hidden;
-  height: 250px;
-  flex:1
+
 }
 
 .featuredImg{
@@ -26,10 +30,279 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
+} 
+
+
+@media screen and (max-width: 1029px) {
+  .featured{
+    gap: 30px;
+  }
+
+  .featuredItem{
+    width: 300px;
+  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 980px) {
+  .featured{
+    gap: 25px;
+  }
+
+  .featuredItem{
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .featuredItem{
+    width: 270px;
+    height: 220px;
+  }
+
+  .featuredTitles h1 {
+    font-size: 30px;
+  }
+
+  .featuredTitles h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .featured{
+    width: 100%;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .featured{
+    width: 95%;
+    padding-left: 270px;
+    padding-right: 250px;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 830px) {
   .featured {
-    margin-top: 200px;
+    padding-left: 290px;
+    padding-right: 260px;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .featured{
+    padding-left: 300px;
+    padding-right: 265px;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .featured{
+    width: 90%;
+    padding-left: 315px;
+    padding-right: 260px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .featured{
+    width: 80%;
+    padding-left: 300px;
+    padding-right: 200px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .featured{
+    padding-right: 190px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .featured{
+    padding-right: 180px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .featured{
+    padding-right: 170px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .featured{
+    padding-left: 305px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .featured{
+    width: 70%;
+    padding-right: 130px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .featured{
+    padding-right: 120px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .featured{
+    padding-right: 115px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .featured{
+    width: 60%;
+    padding-right: 80px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .featured{
+    padding-right: 75px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .featured{
+    width: 50%;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .featured{
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .featured{
+    width: 40%;
+    padding-left: 350px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .featured{
+    width: 30%;
+    padding-left: 350px;
+    padding-right: 40px;
+  }
+
+  .featuredItem{
+    width: 250px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .featured{
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .featured{
+    width: 20%;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .featured{
+    width: 70px;
+    gap: 0px;
+  }
+
+  .featuredItem{
+    width: 250px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .featured{
+    width: 60px;
+    padding-right: 0px;
+  }
+
+  .featuredItem{
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .featured{
+    width: 98%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .featuredItem{
+    width: 350px;
+    height: 250px;
+    margin-left: 0px;
+  }
+
+}
+
+@media screen and (max-width: 370px) {
+  .featuredItem{
+    width: 320px;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .featuredItem{
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .featuredItem{
+    width: 280px;
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .featuredItem{
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  .featuredItem{
+    width: 250px;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .featuredItem{
+    width: 230px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .featuredItem{
+    width: 210px;
+    height: 160px;
   }
 }

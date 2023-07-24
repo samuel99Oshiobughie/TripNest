@@ -35,3 +35,9 @@
   background-color: #72c17f;;
   cursor: not-allowed;
 }
+
+@media screen and (max-width: 700px) {
+  .lContainer {
+    width: 50%;
+  }
+}

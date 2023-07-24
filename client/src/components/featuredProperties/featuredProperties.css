@@ -1,13 +1,18 @@
-.fp {
+.fpContainer {
   width: 100%;
   max-width: 1024px;
   display: flex;
+  /* flex-direction: row; */
   justify-content: space-between;
   gap: 20px;
+  /* background-color: aquamarine; */
 }
 
 .fpItem{
-  flex: 1;
+  /* flex: 1; */
+  /* flex: 0 0 auto; */
+  border-radius: 10px;
+  overflow: hidden;
   gap: 10px;
   display: flex;
   flex-direction: column;
@@ -43,4 +48,270 @@
 
 .fpRating>span{
   font-size: 14px;
+}
+
+@media screen and (max-width: 1029px) {
+  .fpContainer{
+    overflow-x: auto;
+    width: 97%;
+    margin-left: 15px;
+  }
+
+  .fpItem{
+    flex: 0 0 auto;
+    width: 250px;
+  }
+}
+
+
+@media screen and (max-width: 1018px) {
+  .fpContainer{
+    width: 90%;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .fpContainer{
+    width: 85%;
+    margin-left: 79px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .fpContainer{
+    width: 80%;
+    margin-left: 110px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .fpContainer{
+    width: 78%;
+    margin-left: 125px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .fpContainer{
+    width: 75%;
+    margin-left: 145px;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .fpContainer{
+    width: 73%;
+    margin-left: 160px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .fpContainer{
+    width: 70%;
+    margin-left: 180px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .fpContainer{
+    width: 68%;
+    margin-left: 195px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .fpContainer{
+    width: 65%;
+    margin-left: 215px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .fpContainer{
+    width: 63%;
+    margin-left: 230px;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .fpContainer{
+    width: 61%;
+    margin-left: 245px;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .fpContainer{
+    width: 60%;
+    margin-left: 255px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .fpContainer{
+    width: 58%;
+    margin-left: 270px;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .fpContainer{
+    width: 56%;
+    margin-left: 290px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .fpContainer{
+    width: 55%;
+    margin-left: 295px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .fpContainer{
+    width: 54%;
+    margin-left: 305px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .fpContainer{
+    width: 52%;
+    margin-left: 323px;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .fpContainer{
+    width: 49%;
+    margin-left: 350px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .fpContainer{
+    width: 47%;
+    margin-left: 370px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .fpContainer{
+    width: 45%;
+    margin-left: 390px;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .fpContainer{
+    width: 43%;
+    margin-left: 407px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .fpContainer{
+    width: 41%;
+    margin-left: 428px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fpContainer{
+    width: 39%;
+    margin-left: 450px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .fpContainer{
+    width: 37%;
+    margin-left: 470px;
+  }
+}
+
+@media screen and (max-width: 557px) {
+  .fpContainer{
+    width: 35%;
+    margin-left: 493px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .fpContainer{
+    width: 33%;
+    margin-left: 515px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .fpContainer{
+    width: 31%;
+    margin-left: 540px;
+  }
+}
+
+@media screen and (max-width: 487px) {
+  .fpContainer{
+    width: 29%;
+    margin-left: 565px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .fpContainer{
+    width: 28%;
+    margin-left: 575px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .fpContainer{
+    width: 26%;
+    margin-left: 600px;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .fpContainer{
+    width: 24%;
+    margin-left: 628px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .fpContainer{
+    width: 22%;
+    margin-left: 655px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .fpContainer{
+    width: 20%;
+    margin-left: 683px;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .fpContainer{
+    width: 18%;
+    margin-left: 710px;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .fpContainer{
+    width: 16%;
+    margin-left: 743px;
+  }
+}
+
+@media screen and (max-width: 288px) {
+  .fpContainer{
+    width: 14%;
+    margin-left: 770px;
+  }
 }

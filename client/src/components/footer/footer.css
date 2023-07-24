@@ -2,13 +2,18 @@
   width: 100%;
   width: 1024px;
   font-size: 12px;
+  
 }
 
 .fLists{
-  width: 100%;
+  /* width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 50px; */
+  display: grid; 
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
 }
 
 .fList{
@@ -18,6 +23,144 @@
 
 .fListItem{
   margin-bottom: 10px;
-  color: #008035;
+  color: #52d187;
+  /* color: blue; */
   cursor: pointer;
+}
+
+@media screen and (max-width: 1029px) {
+  .fLists{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .fText{
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .fLists{
+    width: 90%;
+    margin-left: 30px;
+  }
+
+  .fList{
+    width: 150px;
+    height: 200px;
+  }
+
+  .fText{
+    margin-left: 39px;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .fLists{
+    width: 85%;
+    margin-left: 75px;
+  }
+
+  .fText{
+    margin-left: 89px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .fLists{
+    margin-left: 115px;
+  }
+
+  .fText{
+    margin-left: 134px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .fLists{
+    width: 70%;
+    margin-left: 150px;
+  }
+
+  .fText{
+    margin-left: 164px;
+  }
+}
+
+@media screen and (max-width: 698px) {
+  .fLists{
+    margin-left: 180px;
+  }
+
+  .fText{
+    margin-left: 194px;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .fLists{
+    width: 60%;
+    margin-left: 215px;
+  }
+
+  .fText{
+    margin-left: 229px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .fLists{
+    width: 50%;
+    margin-left: 245px;
+    gap: 10px;
+  }
+
+  .fText{
+    margin-left: 260px;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .fLists{
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 300px;
+  }
+
+  .fText{
+    margin-left: 320px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .fLists{
+    width: 40%;
+    margin-left: 320px;
+    gap: 5px;
+  }
+
+  .fText{
+    margin-left: 340px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .fLists{
+    width: 30%;
+    margin-left: 350px;
+  }
+
+  .fText{
+    margin-left: 370px;
+  }
+}
+
+
+@media screen and (max-width: 300px) {
+  .fLists{
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 390px;
+  }
+
+  .fText{
+    margin-left: 410px;
+  }
 }

@@ -1,4 +1,6 @@
 .hotelContainer {
+  width: 100%;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,4 +150,41 @@
   font-size: 50px;
   color: lightgray;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1029px) {
+  .hotelWrapper {
+    width: 90%;
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bookNow {
+    position: relative;
+    top: 1px;
+    width: 15rem;
+  }
+
+  .hotelDetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hotelDetailsPrice {
+    margin-top: 30px;
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .hotelDetailsPrice {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .hotelDetailsPrice {
+    width: 10rem;
+  }
 }

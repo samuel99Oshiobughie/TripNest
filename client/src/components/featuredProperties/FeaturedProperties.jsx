@@ -9,7 +9,7 @@ const FeaturedProperties = () => {
       {loading ? (
         "Loading"
       ) : (
-        <>
+        <div className="fpContainer">
           {data.map((item) => (
             <div className="fpItem" key={item._id}>
               <img
@@ -26,7 +26,7 @@ const FeaturedProperties = () => {
               </div>}
             </div>
           ))}
-        </>
+        </div>
       )}
     </div>
   );

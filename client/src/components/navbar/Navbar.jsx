@@ -1,6 +1,6 @@
 import axios from "axios";
-import "./navbar.css";
 import { Link, useNavigate } from "react-router-dom";
+import "./navbar.css";
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
 const Navbar = () => {
@@ -26,14 +26,14 @@ const Navbar = () => {
         {user ? 
         (<div>
           <span>{user.username}</span>
-          <button className="navButton" style={{marginLeft: '30px'}} onClick={logout}>Logout</button>
+          <button className="navButton1" style={{marginLeft: '30px'}} onClick={logout}>Logout</button>
         </div>): (
           <div className="navItems">
             <Link to="/register">
-            <button className="navButton">Register</button>
+            <button className="navButton1">Register</button>
             </Link>
             <Link to="/login">
-            <button className="navButton">Login</button>
+            <button className="navButton1">Login</button>
             </Link>
           </div>
         )}

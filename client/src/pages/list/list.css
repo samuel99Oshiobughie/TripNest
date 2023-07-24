@@ -81,3 +81,25 @@
 .listResult {
   flex: 3;
 }
+
+@media screen and (max-width: 1029px) {
+  .listWrapper {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .listWrapper {
+    flex-direction: column;
+  }
+
+  .listSearch {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .listWrapper {
+    width: 90%;
+  }
+}

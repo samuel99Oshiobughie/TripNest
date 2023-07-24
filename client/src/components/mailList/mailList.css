@@ -28,3 +28,45 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 420px) {
+  .mailInputContainer>input{
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .mailTitle{
+    margin-left: 2rem;
+  }
+
+  .mailInputContainer>input{
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .mailDesc{
+    margin-left: 2rem;
+  }
+  
+  .mailInputContainer>input{
+      width: 230px;
+      margin-right: 2px;
+  }
+}
+
+@media screen and (max-width: 329px) {
+  .mailTitle{
+    margin-left: 3rem;
+  }
+
+  .mailDesc{
+    margin-left: 3rem;
+  }
+  
+  .mailInputContainer{
+      display: flex;
+      flex-direction: column;
+  }
+}

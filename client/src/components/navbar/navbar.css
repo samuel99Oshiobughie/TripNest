@@ -18,17 +18,38 @@
 
 .logo{
   font-weight: 500;
+  font-style: oblique;
   font-size: 25px;
 }
 
-.navButton{
+.navButton1{
   margin-left: 20px;
-  /* border: none; */
   border-radius: 5px;
+  border: none;
   padding: 5px 10px;
   cursor: pointer;
-  /* background-color: rgb(165, 165, 211); */
-  /* color: #209533; */
+  color: #53ba64;
+}
+
+@media screen and (max-width: 1029px) {
+  .navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .navbar{
+    width: 100%;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .navContainer{
+    margin-right: 14px;
+  }
+
+
 }
 
 @media screen and (max-width: 767px) {
